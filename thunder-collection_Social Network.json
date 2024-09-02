@@ -1,0 +1,135 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Social Network",
+    "collectionId": "dc9bb2d3-38af-4634-95e9-bd5f0fb3f698",
+    "dateExported": "2024-08-28T12:01:25.396Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "36aab514-41fb-4a20-a28c-6bdcc9810aec",
+            "colId": "dc9bb2d3-38af-4634-95e9-bd5f0fb3f698",
+            "containerId": "",
+            "name": "Social Network Login API",
+            "url": "http://127.0.0.1:8000/core/user_login/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-08-27T07:20:54.798Z",
+            "modified": "2024-08-28T10:35:18.413Z",
+            "headers": [
+                {
+                    "name": "X-CSRFToken",
+                    "value": "5rfgacnxOb3vl0uPoSD5wNOFbVclgL5CI4nR0BtxHpQdE2nz2fT8fY9JzBNkLehb"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"nitin.bhatti@test.com\",\n  \"password\": \"nitin1907\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "33b0c4e2-179f-4414-95bb-15f702336f22",
+            "colId": "dc9bb2d3-38af-4634-95e9-bd5f0fb3f698",
+            "containerId": "",
+            "name": "Social Network SignUP",
+            "url": "http://127.0.0.1:8000/core/create_user_profile/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-08-27T07:21:01.318Z",
+            "modified": "2024-08-28T10:31:42.470Z",
+            "headers": [
+                {
+                    "name": "X-CSRFToken",
+                    "value": "zBFI215okOJOl12QG7TUKWyPMsyNgd8eceNjSqbod2wwE3VAku9Xt7TTa89MLGkN"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Nitin Bhatti\",\n  \"email\": \"nitin.bhatti@test.com\",\n  \"password\": \"nitin1907\",\n  \"confirm_password\": \"nitin1907\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "14f42d76-e085-4899-9b19-99f54c8bb0ea",
+            "colId": "dc9bb2d3-38af-4634-95e9-bd5f0fb3f698",
+            "containerId": "",
+            "name": "GET CSRF Token",
+            "url": "http://127.0.0.1:8000/core/csrf_token/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-08-28T10:35:45.356Z",
+            "modified": "2024-08-28T10:35:45.356Z",
+            "headers": []
+        },
+        {
+            "_id": "931b6283-eddf-4a7f-9cb1-fdeff3f78a42",
+            "colId": "dc9bb2d3-38af-4634-95e9-bd5f0fb3f698",
+            "containerId": "",
+            "name": "Send Friend Request",
+            "url": "http://127.0.0.1:8000/core/send_friend_request/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-08-28T10:59:43.734Z",
+            "modified": "2024-08-28T10:59:43.734Z",
+            "headers": [
+                {
+                    "name": "X-CSRFToken",
+                    "value": "f6vOYdaJ0AlvcE8Uikiv9YS6xWMMOn239lierV1VcUEVch1t7PqxAvLWhTCBogSl"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"action_to\": \"meet.adalja@test.com\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "774dda11-ad38-42bf-938b-2067e4784dc7",
+            "colId": "dc9bb2d3-38af-4634-95e9-bd5f0fb3f698",
+            "containerId": "",
+            "name": "Accept/Reject and List of friend request",
+            "url": "http://127.0.0.1:8000/core/friend_request/",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-08-28T11:34:23.630Z",
+            "modified": "2024-08-28T11:34:23.630Z",
+            "headers": [
+                {
+                    "name": "X-CSRFToken",
+                    "value": "HtOLHe6wNZ1QadftEdvMnjW94dDOqrsP1JJh2vGkFyYddcwy0yZotuJo8Uxp2Kcb"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"action_to\": \"nitin.bhatti@test.com\",\n    \"action\": \"accepted\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "7788bdfd-828c-4c77-b722-d5ab90a703a6",
+            "colId": "dc9bb2d3-38af-4634-95e9-bd5f0fb3f698",
+            "containerId": "",
+            "name": "search user",
+            "url": "http://127.0.0.1:8000/core/search_users/?search_by=email&query=nitin.bhatti@test.com",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-08-28T11:39:37.670Z",
+            "modified": "2024-08-28T11:39:37.670Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "search_by",
+                    "value": "email",
+                    "isPath": false
+                },
+                {
+                    "name": "query",
+                    "value": "nitin.bhatti@test.com",
+                    "isPath": false
+                }
+            ]
+        }
+    ],
+    "ref": "XuEBPb_ew9i15E5AFrWcM5tNrRdO02GY7y1Zdg9HSOq1uMERQ_RUgtisXtsCt21Ty9ORgw3ByA06qUAfsl8JDw"
+}
