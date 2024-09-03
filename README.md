@@ -85,7 +85,7 @@ Once the Docker containers are up and running, you need to run the database migr
 
 ## Testing the APIs
 
-To test the APIs, you can use tools like **Postman** or **cURL**. Import the provided Postman collection (if available) into Postman to test the endpoints with pre-configured requests, example payloads, and expected responses.
+To test the APIs, you can use tools like **Thunder client** or **Postman**. Import the provided Thunder client collection into Thunder client in VSCode to test the endpoints with pre-configured requests, example payloads, and expected responses.
 
 ### API Endpoints Overview
 
